@@ -8,7 +8,7 @@ body {
 
 header {
 	width: auto;
-	height: 4rem;
+	height: 48px;
 	color: white;
 	background: #8e488e;
 	display: flex;
@@ -167,11 +167,11 @@ nav a:last-child {
 }
 
 .content .dataList:last-child {
-	margin-bottom: 4.67rem;
+	margin-bottom: 54px;
 }
 
 footer {
-	height: 4.67rem;
+	height: 54px;
 	border-top: 1px solid #ccc;
 	color: white;
 	margin-top: 0.83rem;
