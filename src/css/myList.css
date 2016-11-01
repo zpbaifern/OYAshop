@@ -8,14 +8,14 @@ body {
 
 header {
 	width: auto;
-	height: 48px;
+	height: 4rem;
 	color: white;
 	background: #8e488e;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 0 4px;
+	padding: 0 0.33rem;
 }
 
 header span {
@@ -34,18 +34,20 @@ header span:nth-child(3) {
 
 nav {
 	width: auto;
-	height: 48px;
+	height: 4rem;
 	background: #f1f5f6;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 0 0 2px 0;
+	box-shadow: 0 0 0.167rem 0;
 }
 
 nav a {
+	height:2.49rem ;
 	flex: 1;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	border-right: 1px solid #ccc;
 	box-sizing: border-box;
 }
@@ -55,7 +57,7 @@ nav a:last-child {
 }
 
 .content .dataList {
-	margin-bottom: 20px;
+	margin-bottom: 1.67rem;
 }
 
 .content .dataList p:nth-child(1) {
@@ -65,21 +67,21 @@ nav a:last-child {
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #ccc;
-	padding: 0 4px;
+	padding: 0 0.33rem;
 }
 
 .content .dataList>p span {
-	padding: 0 10px;
+	padding: 0 0.83rem;
 }
 
 .content .dataList>p span:last-child {
 	color: #ed369b;
 }
 
-.content .dataList li {
+.content .dataList li:not(:last-child) {
 	background: white;
 	width: auto;
-	height: 96px;
+	height: 8rem;
 	margin-bottom: 5px;
 }
 
@@ -89,7 +91,7 @@ nav a:last-child {
 }
 
 .content .dataList li>div {
-	height: 80px;
+	height: 6.67rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -102,7 +104,7 @@ nav a:last-child {
 }
 
 .content .dataList li>div .pic img {
-	height: 86px;
+	height: 7.17rem;
 }
 
 .content .dataList li>div .info {
@@ -110,7 +112,7 @@ nav a:last-child {
 	width: auto;
 	display: flex;
 	flex-direction: column;
-	padding-top: 10px;
+	padding-top: 0.83rem;
 	justify-content: space-between;
 }
 
@@ -129,13 +131,12 @@ nav a:last-child {
 }
 
 .content .dataList li>div .info .priceAndNum span:last-child {
-	padding: 0 10px;
+	padding: 0 0.83rem;
 }
 
 .content .dataList li:last-child {
 	background: white;
 	width: auto;
-	height: 86px;
 }
 
 .content .dataList li:last-child p:first-child {
@@ -151,7 +152,7 @@ nav a:last-child {
 }
 
 .content .dataList li:last-child p:last-child {
-	height: 47px;
+	height: 3.92rem;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -159,20 +160,21 @@ nav a:last-child {
 
 .content .dataList li:last-child p:last-child span {
 	border: 1px solid #ccc;
-	border-radius: 4px;
-	padding: 5px 13px;
-	margin-right: 13px;
+	border-radius: 0.42rem;
+	padding: 0.42rem 1.08rem;
+	margin-right: 1.08rem;
+	cursor: pointer;
 }
 
 .content .dataList:last-child {
-	margin-bottom: 56px;
+	margin-bottom: 4.67rem;
 }
 
 footer {
-	height: 56px;
+	height: 4.67rem;
 	border-top: 1px solid #ccc;
 	color: white;
-	margin-top: 10px;
+	margin-top: 0.83rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

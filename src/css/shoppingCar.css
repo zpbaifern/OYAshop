@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 body {
 	width: 100%;
 	background: #f1f5f6;
@@ -7,14 +6,14 @@ body {
 
 header {
 	width: auto;
-	height: 48px;
+	height: 4rem;
 	color: white;
 	background: #8e488e;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 0 4px;
+	padding: 0 0.33rem;
 }
 
 header span {
@@ -33,7 +32,7 @@ header span:nth-child(3) {
 
 .content .dataList li {
 	width: auto;
-	height: 103px;
+	height: 8.58rem;
 	background: white;
 	border-bottom: 1px solid #cccccc;
 	box-sizing: border-box;
@@ -42,7 +41,7 @@ header span:nth-child(3) {
 }
 
 .content .dataList li:nth-last-of-type(1) {
-	height: 102px;
+	height: 8.5rem;
 	border-bottom: 0;
 }
 
@@ -61,12 +60,12 @@ header span:nth-child(3) {
 }
 
 .content .dataList li .goods img {
-	height: 96px;
+	height: 8rem;
 }
 
 .content .dataList li .info {
 	flex: 10;
-	height: 86px;
+	height: 7.17rem;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -90,18 +89,23 @@ header span:nth-child(3) {
 
 .content .dataList li .priceAndNum .num span {
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 1.67rem;
+	height: 1.67rem;
 	border: 1px solid #ccc;
-	border-radius: 4px;
+	border-radius: 0.42rem;
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+}
+
+.content .dataList li .priceAndNum .num .redu,
+.content .dataList li .priceAndNum .num .add {
+	cursor: pointer;
 }
 
 .content .dataList li .del {
 	flex: 1.5;
-	height: 86px;
+	height: 7.17rem;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -113,10 +117,10 @@ header span:nth-child(3) {
 }
 
 footer {
-	height: 48px;
+	height: 4rem;
 	border-top: 1px solid #8e488e;
 	color: white;
-	margin-top: 10px;
+	margin-top: 0.83rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -125,7 +129,7 @@ footer {
 
 footer .allPick {
 	flex: 4;
-	height: 44px;
+	height: 3.67rem;
 	padding-top: 3px;
 	color: black;
 	background: #f1f5f6;
@@ -146,8 +150,8 @@ footer .allPick div:last-child {
 
 footer .payMethod {
 	flex: 5;
-	padding-top: 3px;
-	height: 44px;
+	padding-top: 0.25rem;
+	height: 3.67rem;
 	background: #dd3d97;
 	display: flex;
 	align-items: center;
@@ -155,9 +159,9 @@ footer .payMethod {
 }
 
 footer .pay {
-	padding-top: 3px;
+	padding-top: 0.25rem;
 	flex: 6;
-	height: 44px;
+	height: 3.67rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;

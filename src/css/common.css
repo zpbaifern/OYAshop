@@ -12,10 +12,6 @@ input {
 	border: 0;
 }
 
-html {
-	font-size: 16px;
-}
-
 ul {
 	list-style: none;
 }
@@ -23,4 +19,20 @@ ul {
 a {
 	text-decoration: none;
 	color: black;
+}
+html {
+    /* iPhone5 的320px尺寸作为10px基准，414px正好12px大小 */
+    font-size: calc(10px + 2 * (100vw - 320px) / 94);
+}
+@media screen and (min-width: 414px) {
+    html {
+        /* 414px-1014px每100像素宽字体增加1px 1014px正好18px大小*/
+        font-size: calc(12px + (100vw - 414px) / 100);
+    }
+}
+@media screen and (min-width: 1014px) {
+    html {
+        /* 1014px往后是每100像素0.5px增加 */
+        font-size: calc(18px + (100vw - 1014px) / 200);
+    }
 }
