@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-wanshanziliao"></i>
+                    <div class="name">完善资料</div>
+                    <div class="fontclass">.icon-wanshanziliao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fanhuidingbu36px"></i>
+                    <div class="name">返回顶部_36px</div>
+                    <div class="fontclass">.icon-fanhuidingbu36px</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-feedbackicon"></i>
+                    <div class="name">Feedback_icon</div>
+                    <div class="fontclass">.icon-feedbackicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wendangicon"></i>
+                    <div class="name">文档_icon</div>
+                    <div class="fontclass">.icon-wendangicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-jiaoseicon"></i>
+                    <div class="name">角色_icon</div>
+                    <div class="fontclass">.icon-jiaoseicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fuzerenicon"></i>
+                    <div class="name">负责人_icon</div>
+                    <div class="fontclass">.icon-fuzerenicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-goubianyibiaodan"></i>
+                    <div class="name">购便宜—表单</div>
+                    <div class="fontclass">.icon-goubianyibiaodan</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-leftmenuiconusermanagement"></i>
+                    <div class="name">leftmenu-icon-usermanagement</div>
+                    <div class="fontclass">.icon-leftmenuiconusermanagement</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-leftmenuiconadministrater"></i>
+                    <div class="name">leftmenu-icon-administrater</div>
+                    <div class="fontclass">.icon-leftmenuiconadministrater</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-aaleftmenuiconusermanagement"></i>
+                    <div class="name">AA-leftmenu-icon-usermanagement</div>
+                    <div class="fontclass">.icon-aaleftmenuiconusermanagement</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-cup"></i>
+                    <div class="name">奖杯</div>
+                    <div class="fontclass">.icon-cup</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-taobao"></i>
+                    <div class="name">淘宝</div>
+                    <div class="fontclass">.icon-taobao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-renren"></i>
+                    <div class="name">人人</div>
+                    <div class="fontclass">.icon-renren</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-youxiang"></i>
+                    <div class="name">邮箱</div>
+                    <div class="fontclass">.icon-youxiang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-weixin"></i>
+                    <div class="name">微信</div>
+                    <div class="fontclass">.icon-weixin</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zhifubao"></i>
+                    <div class="name">支付宝</div>
+                    <div class="fontclass">.icon-zhifubao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xinlangweibo"></i>
+                    <div class="name">新浪微博</div>
+                    <div class="fontclass">.icon-xinlangweibo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-qq"></i>
+                    <div class="name">qq</div>
+                    <div class="fontclass">.icon-qq</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>实际情况中"iconfont"（font-family）需要修改为你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>
