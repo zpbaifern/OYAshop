@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body,
+div,
+ul,
+li,
+img,
+p,
+input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}

@@ -15,7 +15,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 0 0.33rem;
+	padding: 0 4px;
 }
 
 header span {
@@ -33,33 +33,35 @@ header span:nth-child(3) {
 }
 
 .nav {
-	height: 2rem;
+	height: 25px;
 	background: #f1f5f6;
 }
 
 .content {
 	width: auto;
-	padding: 0 2.5rem;
+	padding: 0 60px;
 }
 
 .content form>div {
 	width: auto;
-	margin-top: 0.95rem;
+	margin-top: 11px;
 }
 
 .content .nickName,
 .content .tel {
+	height: 34px;
 	display: flex;
 	justify-content: center;
-	border-bottom-left-radius: 0.42rem;
-	border-top-left-radius: 0.42rem;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
 	background: yellow;
 	overflow: hidden;
 }
 
-.content .nickName div:first-child,
-.content .tel div:first-child {
-	height: 2.68rem;
+.content .nickName div,
+.content .tel div {
+	height: 32px;
+	width: auto;
 	flex: 8;
 	display: flex;
 	justify-content: center;
@@ -67,42 +69,34 @@ header span:nth-child(3) {
 	background: #eeeeee;
 	border: 1px solid #ccc;
 	border-right: 0;
-	box-sizing: border-box;
-	
+	float: left;
 }
-.content .nickName div:last-child,.content .tel div:last-child {
+
+.content .nickName input,
+.content .tel input {
+	height: 32px;
 	width: auto;
-	height: 2.68rem;
 	flex: 27;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-.content .nickName input,.content .tel input {
-	width: 100%;
-	height: 2.68rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #ccc;
 	border-left: 0;
-	padding: 0 0.66rem;
-	box-sizing: border-box;
+	float: left;
 }
 
 .content address {
 	width: auto;
-	margin-top: 1rem;
-	height: 14rem;
+	margin-top: 11px;
+	height: 168px;
 	display: flex;
 	justify-content: center;
-	border-bottom-left-radius: 0.42rem;
-	border-top-left-radius: 0.42rem;
-	box-sizing:border-box ;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .content address div:first-child {
-	height: 14rem;
+	height: 166px;
 	width: auto;
 	flex: 8;
 	display: flex;
@@ -111,14 +105,14 @@ header span:nth-child(3) {
 	background: #eeeeee;
 	border: 1px solid #ccc;
 	border-right: 0;
-	border-top-left-radius: 0.42rem;
-	border-bottom-left-radius: 0.42rem;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	float: left;
 	font-style: normal;
 }
 
 .content address div:last-child {
-	height: 14rem;
+	height: 166px;
 	width: auto;
 	flex: 27;
 	border: 1px solid #ccc;
@@ -130,54 +124,51 @@ header span:nth-child(3) {
 
 .content address div:last-child input {
 	display: block;
-	height: 3rem;
+	height: 36px;
 	width: 100%;
 	flex: 22.2;
+	border: 1px solid #ccc;
 	box-sizing: border-box;
-	padding: 0 0.66rem;
-	border-top:1px solid #ccc ;
-	border-bottom:1px solid #ccc ;
+	padding: 0 8px;
 }
 
 .content address div:last-child input:first-child {
-	border-top: 0;
+	border-top: none;
 }
 
 .content address div:last-child .xijie {
-	height: 4.35rem;
-	width: 100%;
+	height: 52px;
+	width: auto;
 	flex: 33.4;
+	border: 1px solid #ccc;
 	font-style: normal;
 	border-bottom: 0;
 }
 
 .content form .send {
 	width: 100%;
-	height: 2.63rem;
+	height: 34px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 4.6rem;
-	
 }
 
 .content form .send input {
 	width: 100%;
 	height: 100%;
-	border-radius: 0.42rem;
+	border-radius: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: white;
 	background: #8E488E;
-	font-size: 1rem;
 }
 
 footer {
-	height: 54px;
+	height: 56px;
 	border-top: 1px solid #ccc;
 	color: white;
-	margin-top: 0.83rem;
+	margin-top: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
