@@ -80,7 +80,9 @@
 
 $(function(){
 	var $tijiao = $(".tijiao");
-	$tijiao.on("click",function(){
+	
+	
+	$tijiao.on("singleTap",function(){
 		var obj = {};
 				
 						obj.nickname = "1234567";
