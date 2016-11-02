@@ -173,7 +173,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	background: white;
+	background: #E2E9E2;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -188,9 +188,11 @@ footer a {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	color: #777777
+	color: #8E488E
 }
 
 footer a:hover {
-	color: #8E488E;
+	color: #FC217E;
 }
+
+footer .init{color:#FC217E ;}
