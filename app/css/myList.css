@@ -6,7 +6,7 @@ body {
 	background: #f1f5f6;
 }
 
-header {
+/*header {
 	width: auto;
 	height: 48px;
 	color: white;
@@ -30,7 +30,7 @@ header span:nth-child(2) {
 
 header span:nth-child(3) {
 	flex: 1;
-}
+}*/
 
 nav {
 	width: auto;
@@ -170,7 +170,7 @@ nav a:last-child {
 	margin-bottom: 54px;
 }
 
-footer {
+/*footer {
 	height: 54px;
 	border-top: 1px solid #ccc;
 	color: white;
@@ -199,4 +199,4 @@ footer a {
 
 footer a:hover {
 	color: #8E488E;
-}
+}*/

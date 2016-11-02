@@ -83,6 +83,7 @@ $(function(){
 	
 	
 	$tijiao.on("singleTap",function(){
+		alert(1);
 		var obj = {};
 				
 						obj.nickname = "1234567";
