@@ -5,7 +5,19 @@ $(function() {
 
 	var str = 0;
 //根据获取的本地存储数据，生成商品列表
-
+buyList = [
+	{
+	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":1
+	},{
+	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":2
+	},{
+	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":3
+	},{
+	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":4
+	},{
+	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":5
+	}
+];
 	if(buyList){
 		$dataList.html("");
 		$.each(buyList, function(idx, item) {
@@ -33,7 +45,7 @@ $(function() {
 
 			var $div4 = $("<div/>").addClass("del iconfont icon-laji");
 
-			var $li = $("<li/>").append($div1).append($div2).append($div3).append($div4);
+			var $li = $("<li/>").append($div1).append($div2).append($div3).append($div4).attr("order",item.order);
 			$dataList.append($li);
 
 		});
@@ -122,7 +134,7 @@ $(function() {
 	//垃圾桶按钮点击，删除所在的li
 	var $del = $(".del");
 	$dataList.on("singleTap", ".del", function() {
-
+	
 		if($(this).closest("li").find("input").prop("checked")) {
 			$(this).closest("li").remove();
 			sum();
@@ -130,4 +142,15 @@ $(function() {
 			alert("未选中");
 		}
 	});
+	
+	
+	//确认支付点击，把选中的信息，保存为payList的本地存储数据
+	$(".pay").on("singleTap","a",function(){
+	var payList = localStorage.getItem("payList") ? JSON.parse(localStorage.getItem("payList")) : [];
+		
+		$(".dataList").
+	});
+	
+	
+	
 });
