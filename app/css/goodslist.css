@@ -1,0 +1,171 @@
+			body {
+				background: #F2F2F2;
+				font-weight: bold;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			/*头部*/
+			
+			.top {
+				text-align: center;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				background: #8E488E;
+				height: 56px;
+				display: flex;
+			}
+			
+			.top span {
+				line-height: 56px;
+				/*height: 30px;*/
+				flex: 1;
+				justify-content: center;
+			}
+			
+			.iconfont {
+				color: #FFFFFF;
+			}
+			/*商品列表外框*/
+			
+			#box {
+				width: 100%;
+				margin-top: 56px;
+				background: #F1F5F6;
+				/*margin-left: 20px;*/
+				flex-direction: row;
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+				box-sizing: border-box;
+			}
+			
+			ul,
+			li {
+				list-style: none;
+				padding: 0;
+			}
+			/*列表左侧导航*/
+			
+			.oleft {
+			
+				width: 25%;
+			}
+			
+			.oleft ul li {
+				height: 60px;
+				line-height: 60px;
+				width: 100px;
+				text-align: center;
+				background: #FFFFFF;
+				cursor: pointer;
+				margin:10px 0;
+			}
+			
+			.oleft li:nth-child(1) {
+				background: #F1F5F6;
+				color: #FE3E3E;
+			}
+			/*列表右侧导航*/
+			
+			.oright div:nth-child(1),
+			.oright div:nth-child(2),
+			.atcive div:nth-child(1),
+			.atcive div:nth-child(2) {}
+			
+			.oright,
+			.atcive {
+			
+				width: 75%;
+				margin-left: 10px;
+			}
+			
+			
+			
+			
+			
+			.oright img,
+			.atcive img {
+				height: 65px;
+				width: 65px;
+				/*width: 210px;*/
+				display: block;
+			}
+			
+	
+			
+			.oright ul,
+			.atcive ul {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				flex-wrap: wrap;
+				text-align: center;
+				box-sizing: border-box;
+			}
+			
+			.oright li,
+			.atcive li {
+				flex: 1;
+				margin: 0 auto;
+				padding: 0;
+			}
+			
+			.oright li span,
+			.atcive li span {
+				display: flex;
+			}
+			
+			.oright h3,
+			.atcive h3 {
+				background: #F1F5F6;
+				display: flex;
+			}
+			/*atcive高亮*/
+			
+			.atcive {
+				display: block;
+			}
+			/**/
+			
+			.hover {
+				color: #FE3E3E;
+				background: #F1F5F6;
+			}
+			
+			.normal {
+				color: black;
+				background: #ddd;
+			}
+			
+			.hide {
+				display: none;
+			}
+			/*底部*/
+			
+			.footer {
+				height: 56px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: #8E488E;
+			}
+			
+			.footer_list {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+			}
+			
+			.footer_list li {
+				flex: 1;
+				list-style: none;
+			}
+			
+			.footer_list a {
+				color: #CCCCCC;
+				text-decoration: none;
+			}

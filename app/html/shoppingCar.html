@@ -8,17 +8,22 @@
 		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="../css/shoppingCar.css"/>
-		<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
 		<script type="text/javascript" src="../js/zepto/dist/zepto.js"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				//
+				var 
+			});
+		</script>
 	</head>
 
 	<body>
-		<header class="header"><span><a style="color: white;" href="myList.html" class="iconfont icon-fanhui"></a></span><span>购物车</span><span class="iconfont icon-caidan"></span></header>
+		<header class="header"><span><a style="color: white;" href="###" class="iconfont icon-fanhui"></a></span><span>购物车</span><span class="iconfont icon-caidan"></span></header>
 		<section class="content">
 			<ul class="dataList">
 				<li>
 					<div class="choice">
-						<input type="checkbox" />
 						<img src="../img/noPick.png" />
 					</div>
 					<div class="goods">
@@ -31,7 +36,7 @@
 
 						<div class="priceAndNum">
 							<div class="price">
-								&yen;&nbsp;&nbsp;120
+								￥&nbsp;&nbsp;120
 							</div>
 							<div class="num">
 								<span class="redu">-</span>
@@ -47,7 +52,6 @@
 				</li>
 				<li>
 					<div class="choice">
-						<input type="checkbox" />
 						<img src="../img/noPick.png" />
 					</div>
 					<div class="goods">
@@ -60,7 +64,35 @@
 
 						<div class="priceAndNum">
 							<div class="price">
-								&yen;&nbsp;&nbsp;120
+								￥&nbsp;&nbsp;120
+							</div>
+							<div class="num">
+								<span class="redu">-</span>
+								<span class="num">1</span>
+								<span class="add">+</span>
+							</div>
+
+						</div>
+					</div>
+					<div class="del iconfont icon-laji">
+
+					</div>
+				</li>
+				<li>
+					<div class="choice">
+						<img src="../img/noPick.png" />
+					</div>
+					<div class="goods">
+						<img src="../img/54.jpg" />
+					</div>
+					<div class="info">
+						<div class="title">
+							斯文印花黑灰色短袖连衣裙
+						</div>
+
+						<div class="priceAndNum">
+							<div class="price">
+								￥&nbsp;&nbsp;120
 							</div>
 							<div class="num">
 								<span class="redu">-</span>
@@ -79,8 +111,8 @@
 		</section>
 		<footer class="footer">
 			<div class="allPick">
-				<div><input type="checkbox" name="all" id="all" value="" /><img src="../img/noPick.png"/></div>
-				<label for="all">全选</label>
+				<div class><img src="../img/noPick.png" /></div>
+				<div>全选</div>
 			</div>
 			<div class="payMethod">支付方式></div>
 			<div class="pay">确认支付(<span>0</span>)</div>

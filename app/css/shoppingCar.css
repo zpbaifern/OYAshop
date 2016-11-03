@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body {
 	width: 100%;
 	background: #f1f5f6;
@@ -13,7 +14,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 0 0.33rem;
+	padding: 0 4px;
 }
 
 header span {
@@ -29,35 +30,19 @@ header span:nth-child(2) {
 header span:nth-child(3) {
 	flex: 1;
 }
-.content .dataList{margin-bottom: 54px;}
+
 .content .dataList li {
 	width: auto;
-	height: 8.58rem;
+	height: 103px;
 	background: white;
 	border-bottom: 1px solid #cccccc;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-	
 }
-.content .dataList li div:nth-child(1){
-	position: relative;
-}
-.content .dataList li div:nth-child(1) input{
-	width: 18px;
-	height: 18px;
-	opacity: 0;
-}
-.content .dataList li div:nth-child(1) img{
-	position: absolute;
-	width: 18px;
-	height: 18px;
-	left: 50%;
-	top: 50%;
-	margin: -9px 0 0 -9px;
-}
+
 .content .dataList li:nth-last-of-type(1) {
-	height: 8.5rem;
+	height: 102px;
 	border-bottom: 0;
 }
 
@@ -76,12 +61,12 @@ header span:nth-child(3) {
 }
 
 .content .dataList li .goods img {
-	height: 8rem;
+	height: 96px;
 }
 
 .content .dataList li .info {
 	flex: 10;
-	height: 7.17rem;
+	height: 86px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -105,23 +90,18 @@ header span:nth-child(3) {
 
 .content .dataList li .priceAndNum .num span {
 	display: block;
-	width: 1.67rem;
-	height: 1.67rem;
+	width: 20px;
+	height: 20px;
 	border: 1px solid #ccc;
-	border-radius: 0.42rem;
+	border-radius: 4px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-}
-
-.content .dataList li .priceAndNum .num .redu,
-.content .dataList li .priceAndNum .num .add {
-	cursor: pointer;
+	align-content: center;
 }
 
 .content .dataList li .del {
 	flex: 1.5;
-	height: 7.17rem;
+	height: 86px;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -132,25 +112,21 @@ header span:nth-child(3) {
 	color: #ccc;
 }
 
-
 footer {
-	height: 54px;
+	height: 48px;
 	border-top: 1px solid #8e488e;
 	color: white;
-	margin-top: 0.83rem;
+	margin-top: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
 }
 
 footer .allPick {
 	flex: 4;
-	height: 54px;
+	height: 44px;
+	padding-top: 3px;
 	color: black;
 	background: #f1f5f6;
 	display: flex;
@@ -162,33 +138,16 @@ footer .allPick div:first-child {
 	flex: 1;
 	display: flex;
 	justify-content: center;
-	position: relative;
-}
-footer .allPick div:first-child img{
-	position: absolute;
-	width: 18px;
-	height: 18px;
-	left: 50%;
-	top: 50%;
-	margin: -9px 0 0 -9px;
-}
-footer .allPick div:first-child input{
-	width: 18px;
-	height: 18px;
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	opacity: 0;
-	z-index: 2;
 }
 
-footer .allPick label:last-child {
+footer .allPick div:last-child {
 	flex: 2;
 }
 
 footer .payMethod {
 	flex: 5;
-	height: 54px;
+	padding-top: 3px;
+	height: 44px;
 	background: #dd3d97;
 	display: flex;
 	align-items: center;
@@ -196,9 +155,9 @@ footer .payMethod {
 }
 
 footer .pay {
-	
+	padding-top: 3px;
 	flex: 6;
-	height: 53px;
+	height: 44px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
