@@ -2,7 +2,8 @@
 $(function() {
 	var li1 = $(".oleft li");
 	var li2 = $(".hide");
-	li2.first().removeClass().addClass("atcive")
+	li2.first().removeClass().addClass("atcive");
+	$(".oright").hide();
 	$(".oleft li").on('singleTap',function() {
 
 		$(this).css({

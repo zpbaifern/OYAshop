@@ -8,7 +8,7 @@ window.onload = function() {
 
 	$(function() {
 
-		//µã»÷²Ëµ¥Í¼±êÏÔÊ¾²Ëµ¥
+		//点击显示列表
 		$('.top li:eq(1)').addClass('active');
 		$('.show').hide();
 
@@ -20,6 +20,7 @@ window.onload = function() {
 
 		$('.xiangqing').show();
 		$('.comment').hide();
+		
 		//µã»÷ÏêÇé»òÕßÆÀÂÛÌí¼Ó¸ßÁÁÐ§¹û   ÏÔÊ¾ÏêÇéÒ³ »òÆÀÂÛÒ³
 		$('.top li:eq(2)').on('singleTap', function() {
 

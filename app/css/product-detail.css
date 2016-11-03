@@ -1,4 +1,5 @@
 ul,li{list-style: none;}
+a{text-decoration: none;color: white;}
 *{padding: 0;margin: 0;}
 /*************8头部************/
 .top{ z-index:22;position: fixed;top: 0;right: 0;left: 0;display: flex;}
@@ -78,8 +79,7 @@ ul,li{list-style: none;}
 
 /*****点击时显示******/
 .options.cur{border-color: #ed1516;background: pink;}
-/*.selected.active2{ background-size: contain; background: url(../images/choose2.jpg) no-repeat right bottom; position: absolute; display: inline-block; width: 16px;line-height: 22px; text-align: right; bottom: 0px; right: 0px;}
-*/
+
 
 
 /***************商品详情部分，图片*************/

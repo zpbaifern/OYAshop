@@ -5,9 +5,24 @@
 ul,li{
 	list-style: none;
 }
-#gold-wrap {}
 
+.top{
+	z-index:22;
+	position: fixed;
+}
+
+.box{
+	z-index:2;
+}
+
+.gold-top{
+	padding-top:70px;
+}
+.gold-list{
+	margin-top: 20px;
+}
 .gold-top,.gold-main ,.list-head{
+	
 	width: auto;
 	height: 80px;
 	background: #f1f5f6;
@@ -45,8 +60,19 @@ ul,li{
 	
 }
 /*底部*/
-.footer{height:49px;position: fixed;bottom:0;left: 0;right: 0;background: #8E488E;}
-.footer_list{display: flex;justify-content: center;text-align: center;padding-top: 5px;}
-.footer_list li{flex: 1;list-style: none;}
+.footer{height:49px;position: fixed;bottom:0;left: 0;right: 0;background: #8E488E;z-index:22;}
+.footer_list{display: flex;justify-content: center;text-align: center;height:49px;}
+.footer_list li{flex: 1;list-style: none;font-size: 14px;}
 .footer_list a{color: #CCCCCC;text-decoration: none;}
+
+
+/*********************底部***************************/
+/*footer ul{ z-index:22;line-height:40px;height:40px;border-top:1px solid purple;position: fixed;bottom: 0;left: 0;right: 0;display: flex;}
+footer ul li{flex: 1;text-align: center;font-size: 14px;color: white;}
+footer ul li:nth-child(1){background: #ddd;}
+footer ul li:nth-child(2){background: palevioletred;}
+footer ul li:nth-child(3){background: purple;}
+footer ul li:first-child{ color: purple; }
+footer ul li a{text-decoration: none;font-size: 14px;color: white;}*/
+
 

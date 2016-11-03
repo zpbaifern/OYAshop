@@ -168,13 +168,9 @@ nav a:last-child {
 	margin-bottom: 56px;
 }
 
-<<<<<<< HEAD:app/css/myList.css
-/*footer {
-	height: 54px;
-=======
+
 footer {
-	height: 56px;
->>>>>>> d9a795b9e797392f30efa5ac6f9a6b626b668753:app/css/myList.css
+	height: 54px;
 	border-top: 1px solid #ccc;
 	color: white;
 	margin-top: 10px;
