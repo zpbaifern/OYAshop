@@ -19,6 +19,7 @@ buyList = [
 	}
 ];
 	if(buyList){
+		
 		$dataList.html("");
 		$.each(buyList, function(idx, item) {
 
@@ -67,8 +68,10 @@ buyList = [
 		$sum.html(str);
 
 	}
+	
 	//根据点选状态，变换图标
 	$dataList.on("singleTap", "input", function() {
+	
 		if($(this).prop("checked")) {
 			$(this).next().attr("src", "../img/tick.png");
 			var $checked = $dataList.find("input").filter(":checked");
@@ -148,13 +151,17 @@ buyList = [
 	$(".pay").on("singleTap","a",function(){
 		var payList = localStorage.getItem("payList") ? JSON.parse(localStorage.getItem("payList")) : [];
 		
-		var $liChecked =$(".dataList").find("input").filter(":checked").closest("li").length;
+		var $liChecked =$(".dataList").find("input").filter(":checked").closest("li");
 		
+		var arr=[];
 		$.each($liChecked,function(idx,item){
-			var arr =[];
-			arr.push(item.attr("order"));
-			payList.push(arr);
+			
+			arr.push($(this).attr("order"));
 		});
+		payList.push(arr);
+		arr=[];
+		payList = JSON.stringify(payList);
+		console.log(payList);
 		localStorage.setItem("payList",payList);
 	});
 	
