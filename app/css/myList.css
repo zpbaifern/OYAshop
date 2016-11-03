@@ -6,7 +6,7 @@ body {
 	background: #f1f5f6;
 }
 
-header {
+/*header {
 	width: auto;
 	height: 48px;
 	color: white;
@@ -30,7 +30,7 @@ header span:nth-child(2) {
 
 header span:nth-child(3) {
 	flex: 1;
-}
+}*/
 
 nav {
 	width: auto;
@@ -168,8 +168,18 @@ nav a:last-child {
 	margin-bottom: 56px;
 }
 
+<<<<<<< HEAD:app/css/myList.css
 footer {
 	height: 56px;
+=======
+<<<<<<< HEAD:app/css/myList.css
+/*footer {
+	height: 54px;
+=======
+footer {
+	height: 56px;
+>>>>>>> d9a795b9e797392f30efa5ac6f9a6b626b668753:app/css/myList.css
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee:app/css/myList.css
 	border-top: 1px solid #ccc;
 	color: white;
 	margin-top: 10px;
@@ -197,4 +207,4 @@ footer a {
 
 footer a:hover {
 	color: #8E488E;
-}
+}*/

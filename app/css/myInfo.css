@@ -6,7 +6,7 @@ body {
 	background: white;
 }
 
-header {
+/*header {
 	width: auto;
 	height: 48px;
 	color: white;
@@ -30,7 +30,7 @@ header span:nth-child(2) {
 
 header span:nth-child(3) {
 	flex: 1;
-}
+}*/
 
 .nav {
 	height: 25px;
@@ -164,8 +164,14 @@ header span:nth-child(3) {
 	background: #8E488E;
 }
 
+<<<<<<< HEAD:app/css/myInfo.css
 footer {
 	height: 56px;
+=======
+
+/*footer {
+	height: 54px;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee:app/css/myInfo.css
 	border-top: 1px solid #ccc;
 	color: white;
 	margin-top: 10px;
@@ -173,7 +179,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	background: white;
+	background: #E2E9E2;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -188,9 +194,9 @@ footer a {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	color: #777777
+	color: #8E488E
 }
 
 footer a:hover {
 	color: #8E488E;
-}
+}*/

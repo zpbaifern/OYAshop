@@ -44,4 +44,12 @@ ul,li{
 	line-height: 80px;
 	
 }
+<<<<<<< HEAD
+=======
+/*底部*/
+.footer{height:49px;position: fixed;bottom:0;left: 0;right: 0;background: #8E488E;}
+.footer_list{display: flex;justify-content: center;text-align: center;padding-top: 5px;}
+.footer_list li{flex: 1;list-style: none;}
+.footer_list a{color: #CCCCCC;text-decoration: none;}
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 

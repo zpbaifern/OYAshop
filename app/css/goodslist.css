@@ -1,13 +1,18 @@
 			body {
 				background: #F2F2F2;
+<<<<<<< HEAD
 				font-weight: bold;
 				width: 100%;
 				margin: 0;
 				padding: 0;
+=======
+				
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			/*头部*/
 			
 			.top {
+<<<<<<< HEAD
 				text-align: center;
 				position: fixed;
 				top: 0;
@@ -16,18 +21,37 @@
 				background: #8E488E;
 				height: 56px;
 				display: flex;
+=======
+				background: #8E488E;
+				height: 56px;
+				width: 100%;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			.top span {
 				line-height: 56px;
+<<<<<<< HEAD
 				/*height: 30px;*/
 				flex: 1;
 				justify-content: center;
+=======
+				height: 30px;
+				width: 30px;
+			}
+			
+			.icon-fanhui {
+				float: left;
+			}
+			
+			.icon-caidan {
+				float: right;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			.iconfont {
 				color: #FFFFFF;
 			}
+<<<<<<< HEAD
 			/*商品列表外框*/
 			
 			#box {
@@ -40,16 +64,36 @@
 				justify-content: space-between;
 				text-align: center;
 				box-sizing: border-box;
+=======
+			
+			.top {
+				text-align: center;
+			}
+			/*商品列表外框*/
+			
+			#box {
+				display: flex;
+				width: auto;
+				background: #F1F5F6;
+				-webkit-flex-wrap: wrap-reverse;
+				margin-left: 20px;
+				margin: 0 auto;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			ul,
 			li {
 				list-style: none;
 				padding: 0;
+<<<<<<< HEAD
+=======
+				margin: 0 auto;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			/*列表左侧导航*/
 			
 			.oleft {
+<<<<<<< HEAD
 			
 				width: 25%;
 			}
@@ -62,6 +106,20 @@
 				background: #FFFFFF;
 				cursor: pointer;
 				margin:10px 0;
+=======
+				width: 200px;
+			}
+			
+			.oleft ul li {
+				height: 80px;
+				line-height: 80px;
+				/*width:330px*/
+				;
+				text-align: center;
+				margin: 5px 0;
+				background: #FFFFFF;
+				cursor: pointer;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			.oleft li:nth-child(1) {
@@ -73,6 +131,7 @@
 			.oright div:nth-child(1),
 			.oright div:nth-child(2),
 			.atcive div:nth-child(1),
+<<<<<<< HEAD
 			.atcive div:nth-child(2) {}
 			
 			.oright,
@@ -104,24 +163,76 @@
 				flex-wrap: wrap;
 				text-align: center;
 				box-sizing: border-box;
+=======
+			.atcive div:nth-child(2) {
+				min-height: 370px;
+				width: 700px;
+				margin-left: 40px;
+			}
+			
+			.oright {
+				width: 700px;
+				display: none;
+			}
+			
+			.oright h3,
+			.atcive h3 {
+				padding: 20px 0 0 0;
+			}
+			
+			.oright img,
+			.atcive img {
+				height: 165px;
+				width: 210px;
+				display: block;
+			}
+			
+			.oright ul,
+			.atcive ul {
+				display: flex;
+				background: #FFFFFF;
+				flex-wrap: wrap;
+				margin-top: 20px;
+				box-sizing: border-box
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			.oright li,
 			.atcive li {
+<<<<<<< HEAD
 				flex: 1;
 				margin: 0 auto;
 				padding: 0;
+=======
+				padding: 0px;
+				height: 200px;
+				width: 180px;
+				line-height: 200px;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+				flex: 1;
+				margin-left: 10px;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			.oright li span,
 			.atcive li span {
+<<<<<<< HEAD
 				display: flex;
+=======
+				position: relative;
+				bottom: 85px;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			.oright h3,
 			.atcive h3 {
 				background: #F1F5F6;
+<<<<<<< HEAD
 				display: flex;
+=======
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			/*atcive高亮*/
 			
@@ -158,6 +269,10 @@
 				display: flex;
 				justify-content: center;
 				text-align: center;
+<<<<<<< HEAD
+=======
+				padding-top: 5px;
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 			}
 			
 			.footer_list li {

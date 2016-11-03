@@ -2,8 +2,12 @@
 $(function() {
 	var li1 = $(".oleft li");
 	var li2 = $(".hide");
+<<<<<<< HEAD
 	li2.first().removeClass().addClass("atcive");
 	$(".oright").hide();
+=======
+	li2.first().removeClass().addClass("atcive")
+>>>>>>> 75754280ccccc7342e5208c9c12e055cdc4c11ee
 	$(".oleft li").on('singleTap',function() {
 
 		$(this).css({
