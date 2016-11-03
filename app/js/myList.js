@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
 
 //						var moneyList = localStorage.getItem('moneyList');
@@ -114,3 +115,8 @@ document.addEventListener('DOMContentLoaded', function() {
 						
 		});				
 						
+=======
+;(function($){
+	
+})(jQuery);
+>>>>>>> 568b7dc5871fdae966709a904e7babe6cfb3b3f8
