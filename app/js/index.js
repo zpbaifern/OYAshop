@@ -3,7 +3,7 @@
 	$.ajaxSetup({
 		data:{pageNo:pageNum},
 		type:"get",
-		url:"../data/index.json",
+		url:"data/index.json",
 		dataType:'json',
 		async:true,
 		success:function(res){//请求成功，以res返回数据
@@ -27,7 +27,7 @@
 				$p2.appendTo($box);
 				$box.appendTo($section);
 				
-			})
+			});
 		}
 	});
 	
@@ -35,24 +35,28 @@
 	
 	$(window).on('scroll',function(){
 		var scrollTop = $(window).scrollTop();
-			
 		// 懒加载：滚动《快到底部》的时候再加载
 		if(scrollTop >= $(document).height() - $(window).height() - 300){
 			pageNum++;
 			
-			if(pageNum>=5){
+			if(pageNum>5){
 				return;
-			}else{
+			}
+			console.log(pageNum);
 				$.ajax({
 				data:{pageNo:pageNum}
-			});
-			}
+			})
+				
 			
 			
 		}
 	});
 	
 	
+	
+});
+
+$(function(){
 	//回到顶部
 	
 	var $callback = $('.callback');
@@ -63,12 +67,13 @@
 			//console.log($scrollTop);
 			if($scrollTop>=400){
 				$callback.show();
-				//绑定点击事件
-				$callback.on('click',function(){
-					$('html,body').animate({'scrollTop':0});
-				});
+				
 			}else{
 					$callback.hide();
 				}
 		});
+		//绑定点击事件
+				$callback.on('click',function(){
+					$('html,body').animate({'scrollTop':0});
+				});
 });

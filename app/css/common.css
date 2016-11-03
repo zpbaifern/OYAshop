@@ -12,6 +12,11 @@ input {
 	border: 0;
 }
 
+
+html {
+	font-size: 16px;
+}
+
 ul {
 	list-style: none;
 }
@@ -20,6 +25,7 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
 /*头部*/
 header {
 	width: auto;
@@ -111,3 +117,4 @@ html {
         font-size: calc(18px + (100vw - 1014px) / 200);
     }
 }
+

@@ -146,9 +146,16 @@ buyList = [
 	
 	//确认支付点击，把选中的信息，保存为payList的本地存储数据
 	$(".pay").on("singleTap","a",function(){
-	var payList = localStorage.getItem("payList") ? JSON.parse(localStorage.getItem("payList")) : [];
+		var payList = localStorage.getItem("payList") ? JSON.parse(localStorage.getItem("payList")) : [];
 		
-		$(".dataList").
+		var $liChecked =$(".dataList").find("input").filter(":checked").closest("li").length;
+		
+		$.each($liChecked,function(idx,item){
+			var arr =[];
+			arr.push(item.attr("order"));
+			payList.push(arr);
+		});
+		localStorage.setItem("payList",payList);
 	});
 	
 	
