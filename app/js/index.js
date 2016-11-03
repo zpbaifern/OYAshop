@@ -42,7 +42,6 @@
 			if(pageNum>5){
 				return;
 			}
-			console.log(pageNum);
 				$.ajax({
 				data:{pageNo:pageNum}
 			})
