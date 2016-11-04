@@ -1,0 +1,93 @@
+body,
+div,
+ul,
+li,
+img,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*头部*/
+header {
+  width: auto;
+  height: 48px;
+  color: white;
+  background: #8e488e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0.33rem;
+  span {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    &:nth-child(2) {
+      flex: 13;
+    }
+    &:nth-child(3) {
+      flex: 1;
+    }
+  }
+}
+/*脚步*/
+footer {
+  height: 54px;
+  border-top: 1px solid #ccc;
+  color: white;
+  margin-top: 0.83rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  a {
+    display: block;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #777777;
+    &:hover {
+      color: #8e488e;
+    }
+  }
+}
+
+
+/*媒体查询*/
+html {
+    /* iPhone5 的320px尺寸作为10px基准，414px正好12px大小 */
+    font-size: calc(10px + 2 * (100vw - 320px) / 94);
+}
+@media screen and (min-width: 414px) {
+    html {
+        /* 414px-1014px每100像素宽字体增加1px 1014px正好18px大小*/
+        font-size: calc(12px + (100vw - 414px) / 100);
+    }
+}
+@media screen and (min-width: 1014px) {
+    html {
+        /* 1014px往后是每100像素0.5px增加 */
+        font-size: calc(18px + (100vw - 1014px) / 200);
+    }
+}
+

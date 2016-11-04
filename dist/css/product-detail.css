@@ -1,0 +1,227 @@
+@charset "UTF-8";
+#productDetail {
+  /*************8头部************/
+  /****************8** 选择时的状态以及显示样式************************/
+  /*****点击时显示******/
+  /***************商品详情部分，图片*************/
+  /*********************底部***************************/
+  /*****************************************评论页***************************/
+}
+
+#productDetail ul, #productDetail li {
+  list-style: none;
+}
+
+#productDetail a {
+  text-decoration: none;
+  color: white;
+}
+
+#productDetail * {
+  padding: 0;
+  margin: 0;
+}
+
+#productDetail .top {
+  z-index: 22;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  line-height: 40px;
+  height: 40px;
+  background: purple;
+  color: white;
+  text-align: center;
+}
+
+#productDetail .top li {
+  flex: 1;
+  text-align: center;
+}
+
+#productDetail .top li:nth-child(2).active {
+  background: white;
+  color: black;
+}
+
+#productDetail .top li:nth-child(3).active {
+  background: white;
+  color: black;
+}
+
+#productDetail nav {
+  z-index: 99;
+  position: fixed;
+  right: 10px;
+  top: 30px;
+}
+
+#productDetail nav ul {
+  width: 130px;
+  height: 230px;
+  background: #5a6066;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
+
+#productDetail nav ul.active {
+  display: block;
+}
+
+#productDetail nav ul li {
+  height: 38px;
+  border-bottom: 1px solid #6b7175;
+  text-align: center;
+  line-height: 38px;
+}
+
+#productDetail nav ul li:last-child {
+  border: none;
+}
+
+#productDetail .swiper-container {
+  margin-top: 60px;
+  width: 100%;
+  height: 350px;
+}
+
+#productDetail .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#productDetail .price, #productDetail .product-introduce, #productDetail .size {
+  margin: 10px;
+}
+
+#productDetail .price span {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#productDetail .color {
+  margin: 10px;
+}
+
+#productDetail .options {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+  margin-right: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+#productDetail .options.cur {
+  border-color: #ed1516;
+  background: pink;
+}
+
+#productDetail .detail img {
+  width: 100%;
+  height: 100%；;
+}
+
+#productDetail footer ul {
+  z-index: 22;
+  line-height: 40px;
+  height: 40px;
+  border-top: 1px solid purple;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+#productDetail footer ul li {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+#productDetail footer ul li:nth-child(1) {
+  background: #ddd;
+}
+
+#productDetail footer ul li:nth-child(2) {
+  background: palevioletred;
+}
+
+#productDetail footer ul li:nth-child(3) {
+  background: purple;
+}
+
+#productDetail footer ul li:first-child {
+  color: purple;
+}
+
+#productDetail footer ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: red;
+}
+
+#productDetail .comment {
+  margin-top: 60px;
+  line-height: 30px;
+}
+
+#productDetail .comment .head {
+  height: 60px;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  line-height: 60px;
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+
+#productDetail .comment .head img {
+  flex: 0.1;
+}
+
+#productDetail .comment .head .name {
+  flex: 1;
+}
+
+#productDetail .comment .head .headtime {
+  flex: 7;
+}
+
+#productDetail .comment .content {
+  margin-bottom: 20px;
+}
+
+#productDetail .comment .content img {
+  width: 100px;
+}
+
+#productDetail .comment .ctime {
+  color: #bebebe;
+}
+
+#productDetail .head-time {
+  font-size: 22px;
+  color: #bebebe;
+}

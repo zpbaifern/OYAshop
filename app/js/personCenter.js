@@ -1,4 +1,4 @@
-;$(function(){
+;jQuery(function($){
 	var $person = $('.person');
 	var $head = $person.find('.left');
 	var $my = $('.my');
@@ -20,4 +20,4 @@
 	console.log(obj);
 		telephone.html(obj.telephone);
 
-})
+});

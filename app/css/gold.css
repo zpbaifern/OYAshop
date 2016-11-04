@@ -9,17 +9,26 @@ ul,li{
 .top{
 	z-index:22;
 	position: fixed;
+	display: flex;justify-content: center;
+	width: 100%;
 }
+.top span{flex: 1;}
 
 .box{
 	z-index:2;
 }
 
-.gold-top{
-	padding-top:70px;
+
+
+#gold-wrap{
+	padding-top: 55px;
+	height: 80px;
+	width: 100%;
+background: #f1f5f6;
 }
+
 .gold-list{
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 .gold-top,.gold-main ,.list-head{
 	

@@ -1,0 +1,224 @@
+body {
+  width: 100%;
+  background: #f1f5f6;
+}
+
+#shoppingCar {
+  /*header {
+    width: auto;
+    height: 48px;
+    color: white;
+    background: #8e488e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 4px;
+}
+header span {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+header span:nth-child(2) {
+    flex: 13;
+}
+header span:nth-child(3) {
+    flex: 1;
+}*/
+}
+
+#shoppingCar nav {
+  z-index: 99;
+  position: fixed;
+  right: 10px;
+  top: 30px;
+}
+
+#shoppingCar nav ul {
+  width: 130px;
+  height: 230px;
+  background: #5a6066;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
+
+#shoppingCar nav ul.active {
+  display: block;
+}
+
+#shoppingCar nav ul li {
+  height: 38px;
+  border-bottom: 1px solid #6b7175;
+  text-align: center;
+  line-height: 38px;
+}
+
+#shoppingCar nav ul li:last-child {
+  border: none;
+}
+
+#shoppingCar nav a {
+  color: white;
+}
+
+#shoppingCar .content .dataList {
+  margin-bottom: 54px;
+}
+
+#shoppingCar .content .dataList li {
+  width: auto;
+  height: 8.58rem;
+  background: white;
+  border-bottom: 1px solid #cccccc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+#shoppingCar .content .dataList li div:nth-child(1) {
+  position: relative;
+}
+
+#shoppingCar .content .dataList li div:nth-child(1) input {
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  z-index: 2;
+}
+
+#shoppingCar .content .dataList li div:nth-child(1) img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 50%;
+  top: 50%;
+  margin: -9px 0 0 -9px;
+}
+
+#shoppingCar .content .dataList li:nth-last-of-type(1) {
+  height: 8.58rem;
+  border-bottom: 0;
+}
+
+#shoppingCar .content .dataList li .choice {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shoppingCar .content .dataList li .goods {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shoppingCar .content .dataList li .goods img {
+  width: 6rem;
+  height: 8rem;
+}
+
+#shoppingCar .content .dataList li .info {
+  flex: 10;
+  height: 7.17rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#shoppingCar .content .dataList li .info .priceAndNum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#shoppingCar .content .dataList li .info .price {
+  color: #dd3d97;
+}
+
+#shoppingCar .content .dataList li .priceAndNum .numChange {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#shoppingCar .content .dataList li .priceAndNum .numChange span {
+  display: block;
+  width: 1.67rem;
+  height: 1.67rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shoppingCar .content .dataList li .del {
+  flex: 1.5;
+  height: 7.17rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#shoppingCar .disable {
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+#shoppingCar footer {
+  height: 54px;
+  border-top: 1px solid #8e488e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#shoppingCar footer .allPick {
+  flex: 4;
+  height: 53px;
+  color: black;
+  background: #f1f5f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#shoppingCar footer .allPick div:first-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#shoppingCar footer .allPick div:last-child {
+  flex: 2;
+}
+
+#shoppingCar footer .payMethod {
+  flex: 5;
+  height: 53px;
+  background: #dd3d97;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#shoppingCar footer .pay {
+  flex: 6;
+  height: 53px;
+}
+
+#shoppingCar footer .pay a {
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #8e488e;
+  color: white;
+}

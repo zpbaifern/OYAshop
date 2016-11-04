@@ -1,4 +1,4 @@
-window.onload = function() {
+;jQuery(function($){
 	// 获取页面元素
 	var datalist = document.getElementById('gold-content');
 	var _page = 1;
@@ -44,4 +44,4 @@ window.onload = function() {
 		}
 	}
 
-}
+});

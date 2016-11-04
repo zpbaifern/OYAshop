@@ -1,72 +1,10 @@
-
-document.addEventListener('DOMContentLoaded', function() {
-
-	//						var moneyList = localStorage.getItem('moneyList');
-	//						moneyList = moneyList ? JSON.parse(moneyList) : [];
-	//
-	//						//点击存数据
-	//						$(".total").on("singleTap", "span:eq(2)", function(){
-	//							//				console.log($(this).closest(".dataList").find("li").length);
-	//							var res = $(this).closest(".dataList").find("li").not(":last"); //获取除当前的li
-	//							var obj = {};
-	//							//				遍历
-	//							$.each(res, function(idx, item) {
-	//								//console.log($(this).find(".priceAndNum span").eq(0).html()+$(this).find(".priceAndNum span").eq(1).html()+$(this).find(".goodName").html());
-	//
-	//								obj.title = $(this).find(".goodName").html();
-	//								obj.price = $(this).find(".priceAndNum span").eq(0).html()
-	//								obj.num = $(this).find(".priceAndNum span").eq(1).html()
-	//
-	//								console.log(obj.title);
-	//								console.log(obj.price);
-	//								console.log(obj.num);
-	//							});
-	//
-	//							moneyList.push(obj);
-	//							localStorage.setItem('moneyList', JSON.stringify(moneyList));
-	//
-	//						});
-	//						
-	//
-	//						//点击删除订单
-	//						$(".total").on("singleTap", "span:eq(3)", function(){
-	//							$(this).closest(".dataList").empty();
-	//						
-	//					localStorage.removeItem("moneyList");
-	//						
-	//						
-	//						});
+;jQuery(function($){
 
 	var payList = localStorage.getItem('payList');
 
 	payList = payList ? JSON.parse(localStorage.getItem('payList')) : [];
 
-//	payList = [
-//		["1", "3"],
-//		["1", "2", "3"],
-//		["1", "2", "3", "4"]
-//	];
-
-	//					  <ul class="dataList">
-	//
-	//						<p><span>店铺1</span><span>交易成功</span></p>
-	//						<li>
-	//							<div>
-	//								<div class="pic"><img src="../img/54.jpg" /></div>
-	//								<div class="info">
-	//									<div class="goodName">斯文印花黑灰色短袖连衣裙</div>
-	//									<div class="priceAndNum">
-	//										<span>￥120</span><span>x2</span>
-	//									</div>
-	//								</div>  
-	//							</div>
-	//						</li>
-	//						<li class="total">
-	//							<p>共<span>1</span>商品，合计：￥<span>100</span></p>
-	//							<p><span>付款</span><span>删除订单</span><span>查看物流</span></p>
-	//						</li>
-	//					</ul>
-
+	
 	if(payList) {
 		$(".content").html("");
 		$.each(payList, function(idx1, item1) {
@@ -89,24 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
 				amount += 1;
 				sum += 998;
 
-				//									<ul class="dataList">
-				//										<p><span>店铺1</span><span>交易成功</span></p>
-				//										<li>
-				//											<div>
-				//												<div class="pic"><img src="../img/54.jpg" /></div>
-				//												<div class="info">
-				//													<div class="goodName">斯文印花黑灰色短袖连衣裙</div>
-				//													<div class="priceAndNum">
-				//														<span>￥120</span><span>x1</span>
-				//													</div>
-				//												</div>
-				//											</div>
-				//										</li>
-				//										<li class="total">
-				//											<p>共<span>1</span>商品，合计：￥<span>100</span></p>
-				//											<p><span>付款</span><span>删除订单</span><span>查看物流</span></p>
-				//										</li>
-				//									</ul>
 				
 				str += ("<li>" + $li2.html() + "</li>");
 			});
@@ -122,16 +42,23 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	}
 
-	$(".content").on("singTap", ".delete", function() {
-		var index = $(this).closest(".datalist").index();
+	$(".content").on("singleTap", ".delete", function() {
+		
+		var index = $(this).closest(".dataList").index();
+		console.log(index);
+		$(this).closest(".dataList").remove();
 		$.each(payList, function(idx, item) {
-			if(idx == i) {
-				item.splice(i, 1);
+			if(idx == index) {
+				payList.splice(index, 1);
 			}
 		});
 		payList = JSON.stringify(payList);
-		localStorage.setItem("payList", payList);
+//		localStorage.setItem("payList", payList);
 	});
+	
+	
+	
+	
 
 });
 

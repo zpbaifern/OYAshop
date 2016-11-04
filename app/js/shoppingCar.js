@@ -1,23 +1,24 @@
-$(function() {
+;jQuery(function($){
 	var $dataList = $(".dataList");
 	var $footer = $("footer");
-	var buyList = localStorage.getItem("dataList") ? JSON.parse(localStorage.getItem("dataList")) : [];
-
+	var buyList = localStorage.getItem("datalist");
+	var buyList = buyList? JSON.parse(localStorage.getItem("datalist")) : [];
+	console.log(buyList);
 	var str = 0;
+	
+	
+	//点击显示列表
+		$('header span:eq(0)').addClass('active');
+		$('.show').hide();
+
+		$('header span:eq(2)').on('singleTap', function() {
+
+			$('.show').toggle();
+			console.log('ssssssssss')
+		})
+	
 //根据获取的本地存储数据，生成商品列表
-buyList = [
-	{
-	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":1
-	},{
-	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":2
-	},{
-	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":3
-	},{
-	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":4
-	},{
-	"title":"日默瓦同款时尚铝框万向轮拉杆箱","price":"998","order":5
-	}
-];
+
 	if(buyList){
 		
 		$dataList.html("");
@@ -35,7 +36,7 @@ buyList = [
 			var $div3 = $("<div/>").addClass("info");
 			var $div_1 = $("<div/>").addClass("title").html(item.title);
 			var $div_2 = $("<div/>").addClass("priceAndNum");
-			var $div_2_1 = $("<div/>").addClass("price").html('&yen;<span class="yen">' + item.price + '</span>');
+			var $div_2_1 = $("<div/>").addClass("price").html('&yen;<span class="yen">998</span>');
 			var $div_2_2 = $("<div/>").addClass("numChange");
 			var $span_2_2_1 = $("<span/>").addClass("redu").html("-");
 			var $span_2_2_2 = $("<span/>").addClass("num").html(1);
@@ -56,7 +57,7 @@ buyList = [
 	sum();
 
 	function sum() {
-
+		
 		str = 0;
 		var $sum = $(".sum");
 		var checked = $dataList.find("input").filter(":checked");
@@ -66,7 +67,6 @@ buyList = [
 		});
 
 		$sum.html(str);
-
 	}
 	
 	//根据点选状态，变换图标
@@ -149,10 +149,11 @@ buyList = [
 	
 	//确认支付点击，把选中的信息，保存为payList的本地存储数据
 	$(".pay").on("singleTap","a",function(){
+		
 		var payList = localStorage.getItem("payList") ? JSON.parse(localStorage.getItem("payList")) : [];
 		
 		var $liChecked =$(".dataList").find("input").filter(":checked").closest("li");
-		
+		if($liChecked.length){
 		var arr=[];
 		$.each($liChecked,function(idx,item){
 			
@@ -163,8 +164,13 @@ buyList = [
 		payList = JSON.stringify(payList);
 		console.log(payList);
 		localStorage.setItem("payList",payList);
+		}
+		localStorage.removeItem("datalist");
+		location.href="myList.html";
+		
 	});
 	
 	
+		
 	
 });

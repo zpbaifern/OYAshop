@@ -1,0 +1,118 @@
+@charset "UTF-8";
+#goodsList {
+  /*头部*/
+  /*底部*/
+}
+
+#goodsList ul, #goodsList li {
+  list-style: none;
+}
+
+#goodsList * {
+  margin: 0;
+  padding: 0;
+}
+
+#goodsList .top {
+  text-align: center;
+  background: #8e488e;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  color: #fffdef;
+}
+
+#goodsList .top span {
+  line-height: 56px;
+  flex: 1;
+}
+
+#goodsList .top span:nth-child(1) {
+  margin-left: 10px;
+}
+
+#goodsList .top span:nth-child(2) {
+  flex: 8;
+}
+
+#goodsList .top a {
+  color: #fffdef;
+  text-decoration: none;
+}
+
+#goodsList #box {
+  display: flex;
+}
+
+#goodsList .oleft {
+  flex: 1;
+  width: 25%;
+  text-align: center;
+  height: 100%;
+}
+
+#goodsList .oleft li {
+  line-height: 40px;
+  font-size: 12px;
+}
+
+#goodsList .oright {
+  width: 70%;
+  background: #f2f2f2;
+  flex: 4;
+}
+
+#goodsList .oright section {
+  margin-bottom: 15px;
+}
+
+#goodsList .oright ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin-bottom: 10px;
+}
+
+#goodsList .oright ul li {
+  flex: 1;
+  text-align: center;
+}
+
+#goodsList .oright ul li img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#goodsList .oright h3 {
+  margin: 12px;
+}
+
+#goodsList .footer {
+  height: 49px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e2e9e2;
+}
+
+#goodsList .footer_list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#goodsList .footer_list li {
+  flex: 1;
+  list-style: none;
+}
+
+#goodsList .footer_list a {
+  color: #8e488e;
+  text-decoration: none;
+}
+
+#goodsList .footer_list .init {
+  color: #fc217e;
+}

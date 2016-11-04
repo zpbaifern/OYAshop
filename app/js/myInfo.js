@@ -1,7 +1,6 @@
-
-$(function() {
+;jQuery(function($){
 	var $name = $(".name");
-	var $telphone = $(".telphone");
+	var $telephone = $(".telephone");
 	var $p = $(".p");
 	var $c = $(".c");
 	var $t = $(".t");
@@ -15,7 +14,7 @@ $(function() {
 
 	function init() {
 		$name.val(info.nickname);
-		$telphone.val(info.telephone);
+		$telephone.val(info.telephone);
 		$p.val(info.province);
 		$c.val(info.city);
 		$t.val(info.town);
@@ -30,6 +29,7 @@ $(function() {
 	$.ajax({
 		url: "../data/address.json",
 		success: function(res) {
+			
 			$("#province").html("");
 			$.each(res, function(idx, item) {
 				$("<option/>").val(item.p).appendTo($province);
@@ -58,15 +58,16 @@ $(function() {
 		});
 		//提交按钮点击事件，判断各填写值是否符合要求，是，则更新localStorage
 		$tijiao.on("singleTap", function() {
+			
 			var obj = {};
 			flag1 = reg1.test($name.val());
 			if(flag1) {
 				obj.nickname = $name.val()
 			}
 
-			flag2 = reg2.test($telphone.val());
+			flag2 = reg2.test($telephone.val());
 			if(flag2) {
-				obj.telephone = $telphone.val();
+				obj.telephone = $telephone.val();
 			}
 
 			reg3 = $p.val();
@@ -94,7 +95,7 @@ $(function() {
 			obj = JSON.stringify(obj);
 
 			localStorage.setItem("info", obj);
-
+			location.href="personCenter.html";
 		});
 	})
 });

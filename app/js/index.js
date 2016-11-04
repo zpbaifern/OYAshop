@@ -1,4 +1,4 @@
-;$(function(){
+;jQuery(function($){
 	var pageNum =1;
 	$.ajaxSetup({
 		data:{pageNo:pageNum},
@@ -10,7 +10,6 @@
 			
 			//遍历数据，并加入页面
 			$.each(res,function(idx,item){
-				console.log(item);
 				var $section = $('.section');
 				var $box = $('<div/>');
 				var $productlist = $('<div/>');
@@ -51,13 +50,7 @@
 		}
 	});
 	
-	
-	
-});
-
-$(function(){
 	//回到顶部
-	
 	var $callback = $('.callback');
 		//绑定鼠标滚动
 		$(window).scroll(function(){
@@ -75,4 +68,7 @@ $(function(){
 				$callback.on('click',function(){
 					$('html,body').animate({'scrollTop':0});
 				});
+	
 });
+
+

@@ -1,0 +1,168 @@
+#index{
+* {
+  padding: 0;
+  margin: 0;
+}
+*img {
+  max-width: 100%;
+}
+/*头部*/
+.head {
+  width: 100%;
+  height: 48px;
+  background: #8e488e;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .logo {
+    font-size: 30px;
+    color: #ffffff;
+    img {
+      height: 25px;
+      flex: 1;
+      margin-top: 10px;
+    }
+  }
+}
+.search {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  line-height: 48px;
+  font-size: 25px;
+  span {
+    flex: 1;
+    color: #fffdef;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+/*轮播图插件样式*/
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+/*分类*/
+.classify {
+  img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.rising {
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  a {
+    flex: 1;
+  }
+}
+.below {
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  a {
+    flex: 1;
+  }
+}
+/*分类专区*/
+.classify_area {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  a {
+    flex: 1;
+  }
+  img {
+    width: 100%;
+  }
+}
+/*产品*/
+.productlist {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  a {
+    flex: 1;
+    height: auto;
+  }
+  img {
+    width: 100%;
+  }
+}
+.box {
+  border-bottom: dashed 1px #cccccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.section {
+  span {
+    color: #b785af;
+  }
+}
+/*回到顶部*/
+.callback {
+  width: 30px;
+  height: 30px;
+  background: #fc8ec2;
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  display: none;
+  color: #fffdef;
+}
+/*底部*/
+.footer {
+  height: 49px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e2e9e2;
+}
+.footer_list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  li {
+    flex: 1;
+    list-style: none;
+  }
+  a {
+    color: #8e488e;
+    text-decoration: none;
+  }
+  .init {
+    color: #fc217e;
+  }
+}
+}

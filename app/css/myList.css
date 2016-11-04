@@ -55,21 +55,21 @@ nav a:last-child {
 }
 
 .content .dataList {
-	margin-bottom: 20px;
+	margin-bottom: 1.67rem;
 }
 
 .content .dataList p:nth-child(1) {
 	background: white;
-	height: 37px;
+	height: 3.08rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #ccc;
-	padding: 0 4px;
+	padding: 0 0.33rem;
 }
 
 .content .dataList>p span {
-	padding: 0 10px;
+	padding: 0 0.83rem;
 }
 
 .content .dataList>p span:last-child {
@@ -83,13 +83,13 @@ nav a:last-child {
 	margin-bottom: 5px;
 }
 
-.content .dataList li:nth-of-type(2),
+.content .dataList li:nth-last-of-type(2),
 .total {
 	margin: 0;
 }
 
 .content .dataList li>div {
-	height: 80px;
+	height: 6.67rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -102,7 +102,8 @@ nav a:last-child {
 }
 
 .content .dataList li>div .pic img {
-	height: 86px;
+	width: 6.6rem;
+	height: 7.2rem;
 }
 
 .content .dataList li>div .info {
@@ -110,7 +111,7 @@ nav a:last-child {
 	width: auto;
 	display: flex;
 	flex-direction: column;
-	padding-top: 10px;
+	padding-top: 0.83rem;
 	justify-content: space-between;
 }
 
@@ -129,13 +130,13 @@ nav a:last-child {
 }
 
 .content .dataList li>div .info .priceAndNum span:last-child {
-	padding: 0 10px;
+	padding: 0 0.83rem;
 }
 
 .content .dataList li:last-child {
 	background: white;
 	width: auto;
-	height: 86px;
+	height: 7.17rem;
 }
 
 .content .dataList li:last-child p:first-child {
@@ -147,11 +148,11 @@ nav a:last-child {
 }
 
 .content .dataList li:last-child p:first-child span:last-child {
-	padding-right: 10px;
+	padding-right: 0.83rem;
 }
 
 .content .dataList li:last-child p:last-child {
-	height: 47px;
+	height: 3.92rem;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -159,9 +160,9 @@ nav a:last-child {
 
 .content .dataList li:last-child p:last-child span {
 	border: 1px solid #ccc;
-	border-radius: 4px;
-	padding: 5px 13px;
-	margin-right: 13px;
+	border-radius: 0.33rem;
+	padding: 0.42rem 1.08rem;
+	margin-right: 1.08rem;
 }
 
 .content .dataList:last-child {
@@ -198,4 +199,4 @@ footer a {
 
 footer a:hover {
 	color: #8E488E;
-}*/
+}

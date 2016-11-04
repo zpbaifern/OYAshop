@@ -1,4 +1,4 @@
-window.onload = function() {
+;jQuery(function($){
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
 		// paginationClickable: true,
@@ -21,7 +21,7 @@ window.onload = function() {
 		$('.xiangqing').show();
 		$('.comment').hide();
 		
-		//µã»÷ÏêÇé»òÕßÆÀÂÛÌí¼Ó¸ßÁÁÐ§¹û   ÏÔÊ¾ÏêÇéÒ³ »òÆÀÂÛÒ³
+		//详情和评论页的切换
 		$('.top li:eq(2)').on('singleTap', function() {
 
 			$(this).addClass('active');
@@ -326,4 +326,4 @@ window.onload = function() {
 
 	});
 
-};
+});
