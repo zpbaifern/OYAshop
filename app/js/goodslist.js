@@ -30,10 +30,19 @@
 		$(this).siblings().css({"background": "#FFFFFF","color": "#000000"});
 		
 		section.eq(idx).show().siblings().hide();
-	})
-	//点击section.eq(3)跳转到详情页；
+	});
+	//点击section跳转到详情页；
+	section.eq(0).on('singleTap','li',function(){
+		location.href = '../html/product-detail.html';
+	});
+	section.eq(1).on('singleTap','li',function(){
+		location.href = '../html/product-detail.html';
+	});
+		section.eq(2).on('singleTap','li',function(){
+		location.href = '../html/product-detail.html';
+	});
 	section.eq(3).on('singleTap','li',function(){
 		location.href = '../html/product-detail.html';
-	})
+	});
 
 });
